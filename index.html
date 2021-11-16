@@ -23,10 +23,9 @@
             ['John', 4, 18, 'There is no fear in love. But perfect love drives out fear, because fear has to do with punishment. The one who fears is not made perfect in love.']
         ];
 
+        const randoNum = Math.floor(Math.random() * messages.length)
 
-        for (let i = 0; i < messages.length; i++) {
-            document.write(messages[i] + '<br> <br>');
-        }
+        document.write(messages[randoNum] + '<br> <br>');
     </script>
 
 
