@@ -1,5 +1,7 @@
-let waterUsage = Number(prompt("Enter the number of litres of water used"));
-let levelBill
+let waterUsage = Number(prompt("Enter the number of litres of water used")); // Accept user input
+let levelBill // Define the variable to be use to multiply the input. This varible will be declared based on each condition
+
+// Conditions for calculating the actual bill 
 if (waterUsage <= 6) {
     let levelBill = 15.73;
     let totalBill = levelBill * waterUsage;
@@ -17,5 +19,5 @@ if (waterUsage <= 6) {
     let totalBill = levelBill * waterUsage;
     console.log(`Your total bill is R${totalBill.toFixed(2)}`)
 } else {
-    console.log(`That is not a valid input. Please check again and enter the correct number of liters of water used`)
+    console.log(`That is not a valid input. Please check again and enter the correct number of liters of water used`) // Default condition to be used if no other condition is met
 }
